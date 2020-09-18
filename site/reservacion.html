@@ -1,23 +1,87 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="utf-8">
-        <title>Reservaciones * Cruce de Los Lagos</title>
-        <meta name="autor" content="Carlos Auner Medina Montejano">
-        <meta name="email" content="auner.medina@udgvirtual.udg.mx">
-    </head>
-    <body>
-        <header>
-            <h1>Cruce Andino en Sudamerica</h1>
-        </header>
-        <nav>
-            <a href="index.html">Inicio</a> |
-            <a href="historia.html">Historia</a> |
-            <a href="atractivos.html">Atractivos</a> |
-            <a href="testimonios.html">Testimonios</a> |
-            <a href="reservacion.html">Reserva</a> |
-            <a href="libre.html">Acerca de</a>
-        </nav>
-        <h2>Reservación</h2>
-    </body>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <title>Reservaciones * Cruce de Los Lagos</title>
+    <meta name="autor" content="Carlos Auner Medina Montejano">
+    <meta name="email" content="auner.medina@udgvirtual.udg.mx">
+</head>
+
+<body>
+    <header>
+        <h1>Cruce Andino en Sudamerica</h1>
+    </header>
+    <nav>
+        <a href="index.html">Inicio</a> |
+        <a href="historia.html">Historia</a> |
+        <a href="atractivos.html">Atractivos</a> |
+        <a href="testimonios.html">Testimonios</a> |
+        <a href="reservacion.html">Reserva</a>
+    </nav>
+    <h2>Reservación</h2>
+    <p>Gracias por interesarte en esta maravillosa aventura, llena el siguiente formulario para ser contactado y
+        proporcionarte más detalles así como contestar tus preguntas.</p>
+    <br>
+
+    <form action="libre.html">
+        <label for="name">Nombre:</label><br>
+        <input type="text" id="name" autofocus><br><br>
+        <label for="lname">Apellido:</label><br>
+        <input type="text" id="lname"><br><br>
+        <label for="email">Email:</label><br>
+        <input type="email" id="email"><br><br>
+        <label for="phone">Teléfono(opcional, formato: 123-456-7890):</label><br>
+        <input type="tel" id="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"><br><br>
+        <label for="msg">Mensaje (Máx: 1000 caracteres):</label><br>
+        <textarea name="msg" id="msg" cols="31" rows="7" maxlength="1000"></textarea>
+        <br><br>
+        <label for="date">Fecha de Inicio:</label><br>
+        <input type="date" id="date"><br><br>
+        
+        <label for="adult">Adultos:</label>
+        <select class="cs" name="adult" id="adult">
+            <option>1</option>
+            <option selected="selected">2</option>
+            <option>3</option>
+            <option>4</option>
+            <option>5</option>
+            <option>6</option>
+            <option>7</option>
+            <option>8</option>
+            <option>9</option>
+            <option>10</option>
+            <option>11</option>
+            <option>12</option>
+            <option>13</option>
+            <option>14</option>
+            <option>15</option>
+            <option>16</option>
+            <option>17</option>
+            <option>18</option>
+            <option>19</option>
+            <option>20</option>
+        </select>
+        <label for="children">Niños:</label>
+        <select class="cs" name="children" id="children">
+            <option selected="selected">0</option>
+            <option>1</option>
+            <option>2</option>
+            <option>3</option>
+            <option>4</option>
+        </select>
+<br><br>
+        <input type="submit" value="Enviar">
+        <input type="reset" value="Limpiar">
+    </form>
+<br><br><br><br>
+    <footer style="background-color:darkgray;">
+        <address>
+            <p>Autor: Carlos Auner Medina Montejano <br>Contacto: <a
+                    href="mailto:auner.medina@udgvirtual.udg.mx">auner.medina@udgvirtual.udg.mx</a></p>
+        </address>
+    </footer>
+
+</body>
+
 </html>
