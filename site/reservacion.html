@@ -6,6 +6,11 @@
     <title>Reservaciones * Cruce de Los Lagos</title>
     <meta name="autor" content="Carlos Auner Medina Montejano">
     <meta name="email" content="auner.medina@udgvirtual.udg.mx">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="static/css/small.css">
+    <link rel="stylesheet" href="static/css/grandes.css">
+    <link rel="stylesheet" href="static/css/general.css">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap" rel="stylesheet"> 
 </head>
 
 <body>
@@ -13,74 +18,125 @@
         <h1>Cruce Andino en Sudamerica</h1>
     </header>
     <nav>
-        <a href="index.html">Inicio</a> |
-        <a href="historia.html">Historia</a> |
-        <a href="atractivos.html">Atractivos</a> |
-        <a href="testimonios.html">Testimonios</a> |
-        <a href="reservacion.html">Reserva</a>
+        <a href="index.html">Inicio</a>
+        <a href="historia.html">Historia</a>
+        <a href="atractivos.html">Atractivos</a>
+        <a href="testimonios.html">Testimonios</a>
+        <a class="active" href="reservacion.html">Reserva</a>
     </nav>
     <h2>Reservación</h2>
     <p>Gracias por interesarte en esta maravillosa aventura, llena el siguiente formulario para ser contactado y
         proporcionarte más detalles así como contestar tus preguntas.</p>
     <br>
-
-    <form action="libre.html">
-        <label for="name">Nombre:</label><br>
-        <input type="text" id="name" autofocus><br><br>
-        <label for="lname">Apellido:</label><br>
-        <input type="text" id="lname"><br><br>
-        <label for="email">Email:</label><br>
-        <input type="email" id="email"><br><br>
-        <label for="phone">Teléfono(opcional, formato: 123-456-7890):</label><br>
-        <input type="tel" id="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"><br><br>
-        <label for="msg">Mensaje (Máx: 1000 caracteres):</label><br>
-        <textarea name="msg" id="msg" cols="31" rows="7" maxlength="1000"></textarea>
-        <br><br>
-        <label for="date">Fecha de Inicio:</label><br>
-        <input type="date" id="date"><br><br>
-        
-        <label for="adult">Adultos:</label>
-        <select class="cs" name="adult" id="adult">
-            <option>1</option>
-            <option selected="selected">2</option>
-            <option>3</option>
-            <option>4</option>
-            <option>5</option>
-            <option>6</option>
-            <option>7</option>
-            <option>8</option>
-            <option>9</option>
-            <option>10</option>
-            <option>11</option>
-            <option>12</option>
-            <option>13</option>
-            <option>14</option>
-            <option>15</option>
-            <option>16</option>
-            <option>17</option>
-            <option>18</option>
-            <option>19</option>
-            <option>20</option>
-        </select>
-        <label for="children">Niños:</label>
-        <select class="cs" name="children" id="children">
-            <option selected="selected">0</option>
-            <option>1</option>
-            <option>2</option>
-            <option>3</option>
-            <option>4</option>
-        </select>
-<br><br>
-        <input type="submit" value="Enviar">
-        <input type="reset" value="Limpiar">
-    </form>
-<br><br><br><br>
-    <footer style="background-color:darkgray;">
+    <div class="contenedor">
+        <form action="libre.html">
+            <div class="row">
+                <div class="col-25">
+                    <label for="name">Nombre:</label>
+                </div>
+                <div class="col-75">
+                    <input type="text" id="name" autofocus>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-25">
+                    <label for="lname">Apellido:</label>
+                </div>
+                <div class="col-75">
+                    <input type="text" id="lname">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-25">
+                    <label for="email">Email:</label>
+                </div>
+                <div class="col-75">
+                    <input type="email" id="email">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-25">
+                    <label for="phone">Teléfono:</label>
+                </div>
+                <div class="col-75">
+                    <input type="tel" id="phone" placeholder="123-456-7890" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-25">
+                    <label for="msg">Mensaje:</label>
+                </div>
+                <div class="col-75">
+                    <textarea name="msg" id="msg" cols="31" rows="7" maxlength="1000"
+                        placeholder="Máx: 1000 caracteres"></textarea>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-25">
+                    <label for="date">Fecha de Inicio:</label>
+                </div>
+                <div class="col-75">
+                    <input type="date" id="date">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-25">
+                    <label for="adult">Adultos:</label>
+                </div>
+                <div class="col-75">
+                    <select class="cs" name="adult" id="adult">
+                        <option>1</option>
+                        <option selected="selected">2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5</option>
+                        <option>6</option>
+                        <option>7</option>
+                        <option>8</option>
+                        <option>9</option>
+                        <option>10</option>
+                        <option>11</option>
+                        <option>12</option>
+                        <option>13</option>
+                        <option>14</option>
+                        <option>15</option>
+                        <option>16</option>
+                        <option>17</option>
+                        <option>18</option>
+                        <option>19</option>
+                        <option>20</option>
+                    </select>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-25">
+                    <label for="children">Niños:</label>
+                </div>
+                <div class="col-75">
+                    <select class="cs" name="children" id="children">
+                        <option selected="selected">0</option>
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                    </select>
+                </div>
+            </div>
+            <div class="row">
+                <input type="submit" value="Enviar">
+            </div>
+            <div class="row">
+                <input type="reset" value="Limpiar">
+            </div>
+        </form>
+    </div>
+    <footer>
         <address>
             <p>Autor: Carlos Auner Medina Montejano <br>Contacto: <a
                     href="mailto:auner.medina@udgvirtual.udg.mx">auner.medina@udgvirtual.udg.mx</a></p>
         </address>
     </footer>
+    
 
 </body>
 

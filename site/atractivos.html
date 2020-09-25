@@ -6,6 +6,11 @@
     <title>Atractivos * Cruce de Los Lagos</title>
     <meta name="autor" content="Carlos Auner Medina Montejano">
     <meta name="email" content="auner.medina@udgvirtual.udg.mx">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="static/css/small.css">
+    <link rel="stylesheet" href="static/css/grandes.css">
+    <link rel="stylesheet" href="static/css/general.css">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap" rel="stylesheet"> 
 </head>
 
 <body>
@@ -13,10 +18,10 @@
         <h1>Cruce Andino en Sudamerica</h1>
     </header>
     <nav>
-        <a href="index.html">Inicio</a> |
-        <a href="historia.html">Historia</a> |
-        <a href="atractivos.html">Atractivos</a> |
-        <a href="testimonios.html">Testimonios</a> |
+        <a href="index.html">Inicio</a>
+        <a href="historia.html">Historia</a>
+        <a class="active" href="atractivos.html">Atractivos</a>
+        <a href="testimonios.html">Testimonios</a>
         <a href="reservacion.html">Reserva</a>
     </nav>
     <section id="links">
@@ -30,95 +35,152 @@
             <li><a href="#pañuelos">Lago Nahuel Huapi: Puerto Blest - Puerto Pañuelo</a></li>
             <li><a href="#bariloche">Puerto Pañuelo - Bariloche</a></li>
         </ul>
+        <br>
         <img src="media/mapa_cruce_andino.jpg" alt="">
-        <p>Mapa del Cruce Andino</p>
+        <p id="desc-mapa">Mapa del Cruce Andino</p>
     </section>
+    <div class="row">
+        <section id="puerto-varas">
+            <h2>Puerto Varas-Petrohué</h2>
+            <p>Primer tramo vía terrestre el cual se puede ver las imponentes vistas del Volcán Osorno y Calbuco, además
+                de
+                ingresar al Parque Nacional Viciente Pérez donde tendremos acceso a los Saltos del Petrohué donde las
+                rocas
+                son de origen volcanico bañadas por caídas de agua color verde esmeralda.</p> <br>
+            <div class="galeria">
+                <img src="media/puerto_varas.jpg" alt="Puerto Varas">
+                <div class="desc">Puerto Varas</div>
+            </div>
+            <div class="galeria">
+                <img src="media/saltos_petroue.jpg" alt="Saltos Petrohué">
+                <div class="desc">Saltos Petrohué</div>
+            </div>
+            <div class="galeria">
+                <video controls>
+                    <source src="media/lago_todoslossantos.mp4" type="video/mp4">
+                </video>
+                <div class="desc">Lago Todos los Santos</div>
+            </div>
 
-    <section id="puerto-varas">
-        <h2>Puerto Varas-Petrohué</h2>
-        <p>Primer tramo vía terrestre el cual se puede ver las imponentes vistas del Volcán Osorno y Calbuco, además de
-            ingresar al Parque Nacional Viciente Pérez donde tendremos acceso a los Saltos del Petrohué donde las rocas
-            son de origen volcanico bañadas por caídas de agua color verde esmeralda.</p> <br>
-        <img src="media/puerto_varas.jpg" width="1280" height="606" alt="Saltos Petrohué">
-        <p>Puerto Varas</p> <br>
-        <img src="media/saltos_petroue.jpg" alt="Saltos Petrohué">
-        <p>Saltos Petrohué</p>
-        <video width="1280" height="606" controls>
-            <source src="media/lago_todoslossantos.mp4" type="video/mp4">
-        </video> <br>
-        <br>
-        <a href="#links">Arriba</a>
-    </section>
-    <section id="peulla">
-        <h2>Lago Todos los Santos: Petrohué - Peulla</h2>
-        <p>Primer tramo vía maritima el cual navegaremos en el lago Todos los Santos donde podremos apreciar nuevas
-            vistas del volcán Osorno, volcán Puntiagudo y cerro Tronador. <br> Aquí llegaremos a Peulla, una villa
-            ecologica donde se podrá almorzar y descansar un momento apreciando la naturaleza que brinda el lugar.</p>
-        <br>
-        <img src="media/peulla.jpg" width="1280" height="606" alt="">
-        <p>Peulla</p>
-        <br>
-        <img src="media/lago_todos_los_santos.jpg" width="1280" height="606" alt="">
-        <p>Lago Todos los Santos</p>
-        <br>
-        <img src="media/peulla2.jpg" width="1280" height="606" alt="">
-        <p>Villa Peulla</p>
-        <br>
-        <img src="media/peulla3.jpg" width="1280" height="606" alt="">
-        <p>Villa Peulla 2</p>
-        <br>
-        <img src="media/rio_negro_silencio.jpg" width="1280" height="606" alt="">
-        <p>Rio Negro</p>
-        <br>
-        <a href="#links">Arriba</a>
-    </section>
-    <section id="frias">
-        <h2>Peulla - Puerto Frías</h2>
-        <p>Continuamos vía terrestre con destino a Puerto Frías, hacia la aduana chilena para realizar trámite de cruce
-            de frontera. Cruzaremos la Cordillera de los Andes camino a Puerto Frías.</p>
-        <img src="media/lago_frias.jpg" width="1280" height="606" alt="Saltos Petrohué">
-        <p>Lago Frías</p> <br>
-        <a href="#links">Arriba</a>
-    </section>
-    <section id="alegre">
-        <h2>Lago Frías: Puerto Frías - Puerto Alegre</h2>
-        <p>Se continua navegando ahora por el Lago Frías con una duración de 20 minutos para llegar a Puerto Alegre.</p>
-        <img src="media/Puerto_Alegre.jpg" width="1280" height="606" alt="Saltos Petrohué">
-        <p>Puerto Alegre</p> <br>
-        <a href="#links">Arriba</a>
-    </section>
-    <section id="blest">
-        <h2>Puerto Alegre - Puerto Blest</h2>
-        <p>Se continua la travecia vía terrestre para llegar a Puerto Blest y así embarcarnos de nuevo.</p> <br>
-        <a href="#links">Arriba</a>
-    </section>
-    <section id="pañuelos">
-        <h2>Lago Nahuel Huapi: Puerto Blest - Puerto Pañuelo</h2>
-        <p>Se realiza la última embarcación para navegar el Lago Nahuel Huapi y tocar Puerto Pañuelo</p> <br>
-        <video width="1280" height="606" controls>
-            <source src="media/lago_nahuel_huapi.mp4" type="video/mp4">
-        </video> <br>
-        <a href="#links">Arriba</a>
-    </section>
-    <section id="bariloche">
-        <h2>Puerto Pañuelo - Bariloche</h2>
-        <p>Una ves arribado el Puerto Pañuelo se toma el último tramo terrestre con destino a la ciudad de Bariloche.
-        </p> <br>
-        <img src="media/SanCarlos_Bariloche.jpg" width="1280" height="606" alt="Saltos Petrohué">
-        <p>San Carlos de Bariloche</p> <br>
-        <img src="media/lagos_sanCarlos.jpg" width="1280" height="606" alt="Saltos Petrohué">
-        <p>Lagos de San Carlos de Bariloche</p> <br>
-        <a href="#links">Arriba</a>
-    </section>
-    <section>
-        <h4>Referencias:</h4>
-        <p>fuente: <a
-                href="https://www.cruceandino.com/cruce/ES/travesias_OWCLAR/travesia-oneway-chile-argentina#">cruceandino</a><br>
-            fotos y videos: Propiedad del autor del sitio <br>
-            foto mapa: <a href="https://www.patagonia-argentina.com/cruce-andino-de-lagos-argentina-chile/">Destinos
-                Top</a></p>
-    </section>
-    <footer style="background-color:darkgray;">
+        </section>
+    </div>
+    <a href="#links">Arriba</a>
+    <div class="row">
+        <section id="peulla">
+            <h2>Lago Todos los Santos: Petrohué - Peulla</h2>
+            <p>Primer tramo vía maritima el cual navegaremos en el lago Todos los Santos donde podremos apreciar nuevas
+                vistas del volcán Osorno, volcán Puntiagudo y cerro Tronador. <br> Aquí llegaremos a Peulla, una villa
+                ecologica donde se podrá almorzar y descansar un momento apreciando la naturaleza que brinda el lugar.
+            </p>
+            <br>
+            <div class="galeria">
+                <img src="media/peulla.jpg" alt="">
+                <div class="desc">Peulla</div>
+            </div>
+
+            <div class="galeria">
+                <img src="media/peulla2.jpg" alt="">
+                <div class="desc">Villa Peulla</div>
+            </div>
+            <div class="galeria">
+                <img src="media/peulla3.jpg" alt="">
+                <div class="desc">Villa Peulla 2</div>
+            </div>
+            <div class="galeria">
+                <img src="media/rio_negro_silencio.jpg" alt="">
+                <div class="desc">Rio Negro</div>
+            </div>
+            <br>
+        </section>
+    </div>
+    <div class="row">
+        <section>
+            
+            <div class="galeria">
+                <img src="media/lago_todos_los_santos.jpg" alt="">
+                <div class="desc">Lago Todos los Santos</div>
+            </div>
+        </section>
+    </div>
+    <a href="#links">Arriba</a>
+    <div class="row">
+        <section id="frias">
+            <h2>Peulla - Puerto Frías</h2>
+            <p>Continuamos vía terrestre con destino a Puerto Frías, hacia la aduana chilena para realizar trámite de
+                cruce
+                de frontera. Cruzaremos la Cordillera de los Andes camino a Puerto Frías.</p>
+            <div class="galeria">
+                <img src="media/lago_frias.jpg" alt="Saltos Petrohué">
+                <div class="desc">Lago Frías</div>
+            </div>
+            <br>
+
+        </section>
+    </div>
+    <a href="#links">Arriba</a>
+    <div class="row">
+        <section id="alegre">
+            <h2>Lago Frías: Puerto Frías - Puerto Alegre</h2>
+            <p>Se continua navegando ahora por el Lago Frías con una duración de 20 minutos para llegar a Puerto Alegre.
+            </p>
+            <div class="galeria">
+                <img src="media/Puerto_Alegre.jpg" alt="Saltos Petrohué">
+                <div class="desc">Puerto Alegre</div>
+            </div>
+        </section>
+    </div>
+    <a href="#links">Arriba</a>
+    <div class="row">
+        <section id="blest">
+            <h2>Puerto Alegre - Puerto Blest</h2>
+            <p>Se continua la travecia vía terrestre para llegar a Puerto Blest y así embarcarnos de nuevo.</p> <br>
+            <a href="#links">Arriba</a>
+        </section>
+    </div>
+    <div class="row">
+        <section id="pañuelos">
+            <h2>Lago Nahuel Huapi: Puerto Blest - Puerto Pañuelo</h2>
+            <p>Se realiza la última embarcación para navegar el Lago Nahuel Huapi y tocar Puerto Pañuelo</p> <br>
+
+            <div class="galeria">
+                <video controls>
+                    <source src="media/lago_nahuel_huapi.mp4" type="video/mp4">
+                </video>
+                <div class="desc">Lago Nahuel Huapi</div>
+            </div>
+
+        </section>
+    </div>
+    <a href="#links">Arriba</a>
+    <div class="row">
+        <section id="bariloche">
+            <h2>Puerto Pañuelo - Bariloche</h2>
+            <p>Una ves arribado el Puerto Pañuelo se toma el último tramo terrestre con destino a la ciudad de
+                Bariloche.
+            </p> 
+            <div class="galeria">
+                <img src="media/SanCarlos_Bariloche.jpg">
+                <div class="desc">Plaza en San Carlos de Bariloche</div>
+            </div>
+            <div class="galeria">
+                <img src="media/lagos_sanCarlos.jpg" >
+                <div class="desc">Lagos de San Carlos de Bariloche</div>
+            </div>
+
+        </section>
+    </div>
+    <a href="#links">Arriba</a>
+    <div class="row">
+        <section>
+            <h4>Referencias:</h4>
+            <p>fuente: <a
+                    href="https://www.cruceandino.com/cruce/ES/travesias_OWCLAR/travesia-oneway-chile-argentina#">cruceandino</a><br>
+                fotos y videos: Propiedad del autor del sitio <br>
+                foto mapa: <a href="https://www.patagonia-argentina.com/cruce-andino-de-lagos-argentina-chile/">Destinos
+                    Top</a></p>
+        </section>
+    </div>
+    <footer>
         <address>
             <p>Autor: Carlos Auner Medina Montejano <br>Contacto: <a
                     href="mailto:auner.medina@udgvirtual.udg.mx">auner.medina@udgvirtual.udg.mx</a></p>

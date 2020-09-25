@@ -6,6 +6,11 @@
     <title>Inicio * Cruce de Los Lagos</title>
     <meta name="autor" content="Carlos Auner Medina Montejano">
     <meta name="email" content="auner.medina@udgvirtual.udg.mx">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="static/css/small.css">
+    <link rel="stylesheet" href="static/css/grandes.css">
+    <link rel="stylesheet" href="static/css/general.css">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap" rel="stylesheet"> 
 </head>
 
 <body>
@@ -13,20 +18,21 @@
         <h1>Cruce Andino en Sudamerica</h1>
     </header>
     <nav>
-        <a href="index.html">Inicio</a> |
-        <a href="historia.html">Historia</a> |
-        <a href="atractivos.html">Atractivos</a> |
-        <a href="testimonios.html">Testimonios</a> |
+        <a class="active" href="index.html">Inicio</a>
+        <a href="historia.html">Historia</a>
+        <a href="atractivos.html">Atractivos</a>
+        <a href="testimonios.html">Testimonios</a>
         <a href="reservacion.html">Reserva</a>
     </nav>
     <br>
 
-
-    <img src="media/lago.jpg" alt="Los Lagos">
-    <p>Puerto Varas, Los Lagos, Chile</p>
-    <br><br><br><br><br><br>
-
-    <footer style="background-color:darkgray;">
+    <div class="row">
+        <div class="col-12">
+            <img src="media/lago.jpg" alt="Los Lagos">
+            <p id="ip">Puerto Varas, Los Lagos, Chile</p>
+        </div>
+    </div>
+    <footer>
         <address>
             <p>Autor: Carlos Auner Medina Montejano <br>Contacto: <a
                     href="mailto:auner.medina@udgvirtual.udg.mx">auner.medina@udgvirtual.udg.mx</a></p>
